@@ -9,10 +9,11 @@ public void deposit(double amount) {
 // TODO: add the amount to the balance
 }
 public boolean withdraw(double amount) {
-// TODO:
-// Withdraw the requested amount if sufficient funds are available.
-// Return true if the withdrawal succeeds.
-// Return false otherwise. return false;
+    if (amount <= balance-50) {
+        balance -= amount;
+        return true;
+    }
+    
 return false;
 }
 public String getAccountSummary() {
