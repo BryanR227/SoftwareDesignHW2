@@ -9,11 +9,11 @@ public void deposit(double amount) {
 // TODO: add the amount to the balance
 }
 public boolean withdraw(double amount) {
-    if (amount <= balance-50) {
-        balance -= amount;
+    if (amount+2 <= balance-50) {
+        balance -= (amount+2);
         return true;
     }
-    
+
 return false;
 }
 public String getAccountSummary() {
